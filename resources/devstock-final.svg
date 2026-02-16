@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top and Left Outer Frame -->
+  <path d="M1 12V2C1 1.44772 1.44772 1 2 1H14C14.5523 1 15 1.44772 15 2V5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Mountain Path -->
+  <path d="M1 10.5L3.5 8L7 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Sun/Dot -->
+  <circle cx="8" cy="4.5" r="1.2" fill="currentColor"/>
+  <!-- Bottom connection -->
+  <path d="M6 13.5H2C1.44772 13.5 1 13.0523 1 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Magnifier Glass -->
+  <circle cx="11" cy="11" r="3.2" stroke="currentColor" stroke-width="1.6"/>
+  <!-- Magnifier Handle -->
+  <path d="M13.2 13.2L15.2 15.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,144 @@
+{
+    "name": "devstock",
+    "displayName": "DevStock",
+    "description": "Search, preview, insert, and download stock images directly inside VS Code using Unsplash, Pexels, and Pixabay.",
+    "version": "1.0.0",
+    "publisher": "devstock",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other",
+        "Snippets"
+    ],
+    "keywords": [
+        "stock images",
+        "unsplash",
+        "pexels",
+        "pixabay",
+        "image search",
+        "developer tools"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "devstock-sidebar",
+                    "title": "DevStock",
+                    "icon": "resources/devstock-final.svg"
+                }
+            ]
+        },
+        "views": {
+            "devstock-sidebar": [
+                {
+                    "type": "webview",
+                    "id": "devstock.searchPanel",
+                    "name": "Image Search",
+                    "icon": "resources/devstock-final.svg"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "devstock.searchImages",
+                "title": "DevStock: Search Stock Images",
+                "icon": {
+                    "light": "resources/devstock-final.svg",
+                    "dark": "resources/devstock-final.svg"
+                }
+            },
+            {
+                "command": "devstock.openSidebar",
+                "title": "DevStock: Open Sidebar"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "devstock.searchImages",
+                "key": "ctrl+shift+i",
+                "mac": "cmd+shift+i"
+            }
+        ],
+        "configuration": {
+            "title": "DevStock",
+            "properties": {
+                "devstock.unsplashApiKey": {
+                    "type": "string",
+                    "default": "8q7PQjQR-OQL8MM_PU4lLomMHMtAfFiV7i_RZx_cXmg",
+                    "description": "Your Unsplash API Access Key"
+                },
+                "devstock.pexelsApiKey": {
+                    "type": "string",
+                    "default": "ExRXrLTjZd6eNYivDqNsCMomNKKh6qHJpRGmaZ72eHurgkSvmpZVBGRg",
+                    "description": "Your Pexels API Key"
+                },
+                "devstock.pixabayApiKey": {
+                    "type": "string",
+                    "default": "17023563-5d7f200f1d8d6f9151aed9d95",
+                    "description": "Your Pixabay API Key"
+                },
+                "devstock.defaultProvider": {
+                    "type": "string",
+                    "enum": [
+                        "unsplash",
+                        "pexels",
+                        "pixabay"
+                    ],
+                    "default": "unsplash",
+                    "description": "Default image provider"
+                },
+                "devstock.downloadPath": {
+                    "type": "string",
+                    "default": "images",
+                    "description": "Default folder to download images to (relative to workspace root)"
+                },
+                "devstock.imageSize": {
+                    "type": "string",
+                    "enum": [
+                        "small",
+                        "medium",
+                        "large",
+                        "original"
+                    ],
+                    "default": "medium",
+                    "description": "Preferred image size for downloads"
+                },
+                "devstock.enableTrigger": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable opening the sidebar when typing the trigger pattern (e.g. {/img}) in the editor."
+                },
+                "devstock.triggerPattern": {
+                    "type": "string",
+                    "default": "{/img}",
+                    "description": "The string to type in the editor to trigger opening the DevStock sidebar."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run build",
+        "build": "node esbuild.js --production",
+        "watch": "node esbuild.js --watch",
+        "lint": "eslint src --ext ts",
+        "compile": "node esbuild.js"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^6.15.0",
+        "@typescript-eslint/parser": "^6.15.0",
+        "esbuild": "^0.19.11",
+        "eslint": "^8.56.0",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "@vscode/codicons": "^0.0.44",
+        "axios": "^1.6.5"
+    }
+}

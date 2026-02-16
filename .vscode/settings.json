@@ -1,0 +1,8 @@
+{
+    "devstock.unsplashApiKey": "8q7PQjQR-OQL8MM_PU4lLomMHMtAfFiV7i_RZx_cXmg",
+    "devstock.pexelsApiKey": "ExRXrLTjZd6eNYivDqNsCMomNKKh6qHJpRGmaZ72eHurgkSvmpZVBGRg",
+    "devstock.pixabayApiKey": "17023563-5d7f200f1d8d6f9151aed9d95",
+    "devstock.defaultProvider": "pixabay",
+    "devstock.downloadPath": "images",
+    "devstock.imageSize": "medium"
+}
