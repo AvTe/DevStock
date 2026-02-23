@@ -1,12 +1,12 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Image Frame -->
-  <rect x="1" y="2" width="11" height="10" rx="1" stroke="currentColor" stroke-width="1.3"/>
-  <!-- Mountain -->
-  <path d="M1 10L4 7L7 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Back card -->
+  <path d="M5 1h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-1V4a1 1 0 0 0-1-1H4V2a1 1 0 0 1 1-1z" fill="currentColor" fill-opacity="0.4"/>
+  <!-- Middle card -->
+  <path d="M3.5 3h9a0.5 0.5 0 0 1 0.5 0.5V5H5a1 1 0 0 0-1 1v7H3.5a0.5 0.5 0 0 1-0.5-0.5v-9A0.5 0.5 0 0 1 3.5 3z" fill="currentColor" fill-opacity="0.6"/>
+  <!-- Front card outline -->
+  <rect x="2" y="5" width="11" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  <!-- Mountain large -->
+  <path d="M2 13.5L5.5 9L8 12L9.5 10.5L13 13.5" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- Sun -->
-  <circle cx="9" cy="5" r="1.2" fill="currentColor"/>
-  <!-- Magnifier Glass -->
-  <circle cx="11.5" cy="11.5" r="3" stroke="currentColor" stroke-width="1.3"/>
-  <!-- Magnifier Handle -->
-  <path d="M13.6 13.6L15.5 15.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="10" cy="8" r="1.3" fill="currentColor"/>
 </svg>

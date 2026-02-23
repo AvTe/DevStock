@@ -2,6 +2,12 @@
 
 All notable changes to the **DevStock** extension will be documented here.
 
+## [1.0.2] - 2025-02-23
+
+### 🐛 Bug Fix
+
+- Redesigned activity bar SVG icon to match the gallery-style PNG icon (stacked cards with mountains and sun). Uses filled paths for better VS Code rendering compatibility.
+
 ## [1.0.1] - 2025-02-23
 
 ### 🐛 Bug Fix
