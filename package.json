@@ -4,6 +4,7 @@
     "description": "Search, preview, insert, and download stock images directly inside VS Code using Unsplash, Pexels, and Pixabay.",
     "version": "1.0.0",
     "publisher": "AvTe",
+    "icon": "resources/icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/AvTe/DevStock"
@@ -35,7 +36,7 @@
                 {
                     "id": "devstock-sidebar",
                     "title": "DevStock",
-                    "icon": "resources/devstock-final.svg"
+                    "icon": "resources/icon.svg"
                 }
             ]
         },
@@ -45,7 +46,7 @@
                     "type": "webview",
                     "id": "devstock.searchPanel",
                     "name": "Image Search",
-                    "icon": "resources/devstock-final.svg"
+                    "icon": "resources/icon.svg"
                 }
             ]
         },
@@ -54,8 +55,8 @@
                 "command": "devstock.searchImages",
                 "title": "DevStock: Search Stock Images",
                 "icon": {
-                    "light": "resources/devstock-final.svg",
-                    "dark": "resources/devstock-final.svg"
+                    "light": "resources/icon.svg",
+                    "dark": "resources/icon.svg"
                 }
             },
             {
