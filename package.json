@@ -3,13 +3,19 @@
     "displayName": "DevStock",
     "description": "Search, preview, insert, and download stock images directly inside VS Code using Unsplash, Pexels, and Pixabay.",
     "version": "1.0.0",
-    "publisher": "devstock",
+    "publisher": "AvTe",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AvTe/DevStock"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.85.0"
     },
     "categories": [
-        "Other",
-        "Snippets"
+        "Snippets",
+        "Programming Languages",
+        "Other"
     ],
     "keywords": [
         "stock images",
@@ -69,18 +75,18 @@
             "properties": {
                 "devstock.unsplashApiKey": {
                     "type": "string",
-                    "default": "8q7PQjQR-OQL8MM_PU4lLomMHMtAfFiV7i_RZx_cXmg",
-                    "description": "Your Unsplash API Access Key"
+                    "default": "",
+                    "description": "Your Unsplash API Access Key. Get one free at https://unsplash.com/developers"
                 },
                 "devstock.pexelsApiKey": {
                     "type": "string",
-                    "default": "ExRXrLTjZd6eNYivDqNsCMomNKKh6qHJpRGmaZ72eHurgkSvmpZVBGRg",
-                    "description": "Your Pexels API Key"
+                    "default": "",
+                    "description": "Your Pexels API Key. Get one free at https://www.pexels.com/api/"
                 },
                 "devstock.pixabayApiKey": {
                     "type": "string",
-                    "default": "17023563-5d7f200f1d8d6f9151aed9d95",
-                    "description": "Your Pixabay API Key"
+                    "default": "",
+                    "description": "Your Pixabay API Key. Get one free at https://pixabay.com/api/docs/"
                 },
                 "devstock.defaultProvider": {
                     "type": "string",

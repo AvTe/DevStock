@@ -1,8 +1,8 @@
 # DevStock — Stock Images for VS Code
 
-<p align="center">
+<!-- <p align="center">
   <img src="resources/devstock-final.svg" alt="DevStock Logo" width="128" />
-</p>
+</p> -->
 
 <h3 align="center">The ultimate stock image companion for developers. Search, Preview, and Insert high-quality images without leaving your editor.</h3>
 

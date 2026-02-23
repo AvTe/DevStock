@@ -67,5 +67,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-    console.log('DevStock extension is now deactivated.');
+    Logger.info('DevStock extension deactivated.');
 }

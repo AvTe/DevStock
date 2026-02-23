@@ -7,6 +7,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import axios from 'axios';
 import { StockImage, ImageSize } from '../types';
+import { Logger } from './logger';
 
 export class ImageDownloader {
 
@@ -43,7 +44,7 @@ export class ImageDownloader {
         try {
             await vscode.workspace.fs.createDirectory(fullDownloadUri);
         } catch (error) {
-            console.error('Failed to create directory', error);
+            Logger.warn('Failed to create download directory');
         }
 
         // Get the appropriate download URL based on size preference
