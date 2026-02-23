@@ -2,6 +2,13 @@
 
 All notable changes to the **DevStock** extension will be documented here.
 
+## [1.0.3] - 2025-02-23
+
+### 🐛 Bug Fixes
+
+- **Fixed all webview icons not showing** — Codicons CSS/fonts were excluded from the VSIX bundle by `.vscodeignore`. Added whitelist rule for `@vscode/codicons/dist`.
+- **Fixed invalid icon name** — `codicon-camera` doesn't exist; replaced with `codicon-device-camera`.
+
 ## [1.0.2] - 2025-02-23
 
 ### 🐛 Bug Fix

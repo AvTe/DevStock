@@ -12,6 +12,7 @@ esbuild.js
 out.log
 **/*.ts
 node_modules/
+!node_modules/@vscode/codicons/dist/**
 !dist/extension.js
 !resources/**
 !LICENSE

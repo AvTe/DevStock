@@ -973,7 +973,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
   <!-- HEADER -->
   <div class="header">
     <div class="title-row">
-      <i class="codicon codicon-camera"></i>
+      <i class="codicon codicon-device-camera"></i>
       <span>DevStock Explorer</span>
       <div class="rate-limit-badge" id="rateLimitBadge" style="display:none">
         <i class="codicon codicon-info"></i>
