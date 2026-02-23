@@ -2,6 +2,12 @@
 
 All notable changes to the **DevStock** extension will be documented here.
 
+## [1.0.1] - 2025-02-23
+
+### 🐛 Bug Fix
+
+- Fixed activity bar icon not displaying. Replaced embedded-raster SVG with a proper vector SVG using `currentColor` for theme compatibility.
+
 ## [1.0.0] - 2025-02-23
 
 ### 🚀 Initial Release

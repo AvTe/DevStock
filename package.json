@@ -2,7 +2,7 @@
     "name": "devstock",
     "displayName": "DevStock",
     "description": "Search, preview, insert, and download stock images directly inside VS Code using Unsplash, Pexels, and Pixabay.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "AvTe",
     "icon": "resources/icon.png",
     "repository": {
