@@ -6,6 +6,7 @@ import * as vscode from 'vscode';
 import axios from 'axios';
 import { IImageProviderService, SearchResult, StockImage } from '../types';
 import { Logger } from '../services/logger';
+import { BUILTIN_KEYS } from '../config/keys';
 
 const PEXELS_API_BASE = 'https://api.pexels.com/v1';
 
@@ -13,7 +14,8 @@ export class PexelsProvider implements IImageProviderService {
     readonly name = 'pexels' as const;
 
     private getApiKey(): string {
-        return vscode.workspace.getConfiguration('devstock').get<string>('pexelsApiKey', '');
+        const userKey = vscode.workspace.getConfiguration('devstock').get<string>('pexelsApiKey', '');
+        return userKey.trim() || BUILTIN_KEYS.pexels;
     }
 
     isConfigured(): boolean {

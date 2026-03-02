@@ -51,15 +51,12 @@ export function activate(context: vscode.ExtensionContext) {
     if (!hasShownWelcome) {
         vscode.window
             .showInformationMessage(
-                'DevStock is active! Type {/img} in your editor or use Ctrl+Shift+I to search images.',
-                'Open DevStock',
-                'Configure API Keys'
+                'DevStock is ready! Type {/img} in your editor or press Ctrl+Shift+I to search stock images.',
+                'Open DevStock'
             )
             .then((selection) => {
                 if (selection === 'Open DevStock') {
                     vscode.commands.executeCommand('devstock.searchPanel.focus');
-                } else if (selection === 'Configure API Keys') {
-                    vscode.commands.executeCommand('workbench.action.openSettings', 'devstock');
                 }
             });
         context.globalState.update('devstock.hasShownWelcome', true);

@@ -2,6 +2,13 @@
 
 All notable changes to the **DevStock** extension will be documented here.
 
+## [1.0.4] - 2025-03-02
+
+### ✨ Improvement
+
+- **Zero-config experience** — Built-in API keys for Unsplash, Pexels, and Pixabay. Users no longer need to configure their own API keys to start using the extension.
+- Simplified welcome message — removed "Configure API Keys" prompt since the extension works out-of-the-box.
+
 ## [1.0.3] - 2025-02-23
 
 ### 🐛 Bug Fixes

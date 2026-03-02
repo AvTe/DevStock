@@ -6,6 +6,7 @@ import * as vscode from 'vscode';
 import axios from 'axios';
 import { IImageProviderService, SearchResult, StockImage } from '../types';
 import { Logger } from '../services/logger';
+import { BUILTIN_KEYS } from '../config/keys';
 
 const UNSPLASH_API_BASE = 'https://api.unsplash.com';
 
@@ -13,7 +14,8 @@ export class UnsplashProvider implements IImageProviderService {
     readonly name = 'unsplash' as const;
 
     private getApiKey(): string {
-        return vscode.workspace.getConfiguration('devstock').get<string>('unsplashApiKey', '');
+        const userKey = vscode.workspace.getConfiguration('devstock').get<string>('unsplashApiKey', '');
+        return userKey.trim() || BUILTIN_KEYS.unsplash;
     }
 
     isConfigured(): boolean {

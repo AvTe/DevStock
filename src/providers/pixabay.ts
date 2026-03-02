@@ -6,6 +6,7 @@ import * as vscode from 'vscode';
 import axios from 'axios';
 import { IImageProviderService, SearchResult, StockImage } from '../types';
 import { Logger } from '../services/logger';
+import { BUILTIN_KEYS } from '../config/keys';
 
 const PIXABAY_API_BASE = 'https://pixabay.com/api/';
 
@@ -13,7 +14,8 @@ export class PixabayProvider implements IImageProviderService {
     readonly name = 'pixabay' as const;
 
     private getApiKey(): string {
-        return vscode.workspace.getConfiguration('devstock').get<string>('pixabayApiKey', '');
+        const userKey = vscode.workspace.getConfiguration('devstock').get<string>('pixabayApiKey', '');
+        return userKey.trim() || BUILTIN_KEYS.pixabay;
     }
 
     isConfigured(): boolean {

@@ -33,11 +33,10 @@
 ## 🚀 Installation & Quick Start
 
 1. **Install** the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com).
-2. **API Keys**: DevStock comes with internal fallbacks, but for full performance, add your own keys in `Settings → DevStock`:
-   - [Unsplash](https://unsplash.com/developers)
-   - [Pexels](https://www.pexels.com/api/)
-   - [Pixabay](https://pixabay.com/api/docs/)
+2. **Ready to Go** — DevStock comes with built-in API keys. Just install and start searching!
 3. **Open Explorer**: Use the Activity Bar icon or press `Ctrl + Shift + I`.
+
+> 💡 **Power Users**: For higher rate limits, you can add your own API keys in `Settings → DevStock` from [Unsplash](https://unsplash.com/developers), [Pexels](https://www.pexels.com/api/), or [Pixabay](https://pixabay.com/api/docs/).
 
 ## ⚙️ Configuration
 
